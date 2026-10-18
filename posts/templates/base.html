@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}Portfólio | Desenvolvimento web{% endblock %}</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#192b35;background:#f4f7f6}*{box-sizing:border-box}body{margin:0}a{color:#087d78}header,footer{background:#123d43;color:white;padding:2rem max(6vw,1rem)}header a{color:white;text-decoration:none;font-size:1.6rem;font-weight:750}main{display:grid;grid-template-columns:minmax(0,3fr) minmax(14rem,1fr);gap:2rem;max-width:1100px;margin:3rem auto;padding:0 1rem}article,aside{padding:2rem;background:white;border:1px solid #d9e5e1;border-radius:14px}article{margin-bottom:1.4rem}h1,h2{line-height:1.15}p{line-height:1.7}.meta{color:#65777b;font-size:.88rem}.body{white-space:pre-wrap}aside{height:fit-content}footer{font-size:.85rem}@media(max-width:700px){main{grid-template-columns:1fr}}
+</style></head><body><header><a href="{% url 'post-list' %}">Código & projetos</a><p>Experimentos, aprendizados e projetos em desenvolvimento web.</p></header>
+<main><section>{% block content %}{% endblock %}</section>{% include 'sidebar.html' %}</main>
+<footer>Portfólio desenvolvido com Python e Django.</footer></body></html>

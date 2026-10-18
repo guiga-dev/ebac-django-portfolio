@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% block title %}{{ post.title }} | Portfólio{% endblock %}
+{% block content %}<article><a href="{% url 'post-list' %}">← Todos os projetos</a><h1>{{ post.title }}</h1><p class="meta">{{ post.author.username }} · {{ post.created_at|date:'d/m/Y' }}</p><div class="body">{{ post.body }}</div></article>{% endblock %}

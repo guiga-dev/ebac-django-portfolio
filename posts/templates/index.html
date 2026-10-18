@@ -1,0 +1,4 @@
+{% extends 'base.html' %}
+{% block content %}<h1>Projetos recentes</h1>
+{% for post in posts %}{% include 'post.html' %}{% empty %}<article><p>Novos projetos serão publicados em breve.</p></article>{% endfor %}
+{% endblock %}
